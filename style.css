@@ -4,7 +4,6 @@ body {
     font-family: Arial, sans-serif;
    /* background-image: url("/poze/f1.png");
     background-size: cover; */
-
   }
   
   /* Stil pentru navbar cu fundal transparent */
@@ -42,7 +41,11 @@ body {
   /* Stil pentru pagină */
   .main-content {
     margin-top: 60px; /* pentru a face loc dashboard-ului */
-    padding: 20px;
+   /* padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;*/
+    /*padding-top: 20px;*/ /* saptiu fata de navbar rezolvat cu br */
+    padding-top: 10px;
   }
   
   /* Pagina de echipe */
@@ -69,7 +72,7 @@ body {
   }
   
   /* Responsive Design: Media Queries */
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .navbar a {
       padding: 10px;
       font-size: 14px;
@@ -83,11 +86,11 @@ body {
       width: 150px; /* Imagini mai mici pe ecrane medii */
     }
     .titlu{
-      padding-left: 10vh;
+      margin-left: 6vh;
     }
   }
   
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .navbar {
       padding: 5px;
     }
@@ -105,9 +108,258 @@ body {
       width: 120px; /* Imagini și mai mici pe ecrane foarte mici */
     }
     .titlu{
-      padding-left: 10vh;
+      margin-left: 12vh;
     }
   }
-.titlu{
-  padding-left: 80dvh;
+  @media screen and (min-width: 769px) {
+  .titlu{
+    font-size: 46px;
+    margin-left: 75dvh;/* 80 */
+    margin-right: 10dvh;
+    color: white
+  }
+  }
+.merc-team{
+  color: blue!important;
+}
+
+/*
+.cont{
+ /*margin: 5dvh;*/
+ /*margin: 0!important;
+  background-color: aqua;
+  /*padding: 20dvh;*/
+  /*padding: 5dvh;
+  border: 8px solid #4c00ff;
+}
+*/
+
+.cont{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+   /* margin-bottom: 40px;*/
+  /*  margin-left: 20px;*/
+    margin-top: 20px;
+  /*  margin-right: 20px;*/
+    gap: 10px; /* Reduce distanța între imagine și text */
+   /* border: 1px;
+    border-radius: 12px;
+    border-color: red;*/
+    border: 8px solid #4c00ff; /* Adaugă bordura colorată */
+    padding: 20px; /* Adaugă spațiu interior pentru un aspect aerisit */
+    border-radius: 10px; /* Colțuri rotunjite pentru un efect mai modern */
+   /* background-color: #c2a7ff;*/
+   background-color: #000877;
+   color: white;
+}
+.cont.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Imagini și text */.cont .image {
+  flex-basis: 35%; /* Imaginea ocupă maxim 35% din spațiu */
+  flex-shrink: 0; /* Imaginea nu se micșorează mai mult */
+}
+.cont .image img {
+  width: 40%; /* Imaginea ocupă 100% din spațiul alocat de .image */
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: all .4s ease-in-out;
+  /*aspect-ratio: 16/9;*/
+}.cont .image img:hover {
+  /*width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;*/
+  scale: 1.05;
+}
+.cont .text {
+  flex-basis: 60%; /* Textul ocupă restul spațiului */
+}
+.cont .text h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+.cont .text p {
+  font-size: 26px;
+  font-weight: 500;
+  text-indent: 5dvh;
+}
+
+
+/* Responsive Design: Media Queries */
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ /* margin-bottom: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;*/
+  gap: 10px; /* Reduce distanța între imagine și text */
+ /* border: 1px;
+  border-radius: 12px;
+  border-color: red;*/
+  border: 8px solid #4c00ff; /* Adaugă bordura colorată */
+  padding: 20px; /* Adaugă spațiu interior pentru un aspect aerisit */
+  border-radius: 10px; /* Colțuri rotunjite pentru un efect mai modern */
+ /* background-color: #c2a7ff;*/
+ background-color: #000877;
+ color: white;
+}
+
+.content-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Imagini și text */
+.content-section .image {
+  flex-basis: 55%; /* Imaginea ocupă maxim 35% din spațiu */
+  flex-shrink: 0; /* Imaginea nu se micșorează mai mult */
+}
+
+.content-section .image img {
+  width: 100%; /* Imaginea ocupă 100% din spațiul alocat de .image */
+  height: auto; /* auto, 55dvh*/
+  display: block;
+  border-radius: 8px;
+  transition: all .4s ease-in-out;
+  /*aspect-ratio: 16/9;*/
+}
+.content-section .image img:hover {
+  /*width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;*/
+  scale: 1.05;
+}
+
+.content-section .text {
+  flex-basis: 42%; /* Textul ocupă restul spațiului 60 inainte*/
+}
+
+.content-section .text h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.content-section .text p {
+  font-size: 26px;
+  font-weight: 500;
+  text-indent: 5dvh;
+}
+.h2-title, .h1-title{
+  text-decoration: 6px underline;
+  text-align: center;
+  padding-bottom: 5dvh;
+}
+.h1-title{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  /*color: #4c00ff;*/
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.link-btn{
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid;
+  border-color: aliceblue;
+  /*background-color: rgb(57, 57, 255);*/
+ /* text-decoration: 2px solid rgb(238, 0, 186) dashed;*/
+  background-color: #274ef8;
+  border-radius: 10vh;
+  color: #ffffff;
+  transition: background-color 0.5s ease, color 0.5s ease, padding 0.5s ease, font-size 0.5s ease, text-decoration 0.5s ease;
+}
+.link-btn:hover{
+  /*background-color: #4c00ff;*/
+  background-color: rgb(11, 27, 95);
+  padding: 25px;
+  font-size: 22px;
+  text-decoration: underline;
+}
+footer {
+  position: sticky; /* sticky*/
+  bottom: 0;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+  /* am adaugat pt a o pune jos */
+  
+
+}
+.f-text{
+  color: white;
+  font-size: 20px;
+  /* asa era inainte*/
+ /* position: sticky;*/
+/* margin-top: 50dvh;*/
+}
+.start-pag{
+ /* background-color: aquamarine;*/
+ background-image: url("/poze/lh.png");
+  background-size: contain;
+}
+
+
+/* poze */
+/* Stil general pentru carusel */
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Butoane pentru navigație */
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.f1-word{
+  font-weight: 700;
+  font-size: 30px;
 }
