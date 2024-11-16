@@ -303,7 +303,7 @@ footer {
 }
 .start-pag{
  /* background-color: aquamarine;*/
- background-image: url("/poze/lh.png");
+ background-image: url("./poze/lh.png");
   background-size: contain;
 }
 
