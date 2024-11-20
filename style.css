@@ -363,3 +363,36 @@ button.next:hover {
   font-weight: 700;
   font-size: 30px;
 }
+
+.team {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.team.selected {
+  background-color: #f0f8ff;
+  border-color: #007bff;
+}
+/* Buton "Back to Top" */
+#back-to-top {
+  display: none; /* Ascuns inițial */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #333; /* Fundal întunecat */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+}
+
+#back-to-top:hover {
+  background-color: #555; /* Schimbare de culoare la hover */
+}

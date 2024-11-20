@@ -2,26 +2,38 @@
 let currentIndex = 0;
 
 // Selectăm toate imaginile din carusel
-const slides = document.querySelector('.slides');
-const totalSlides = slides.children.length;
+ // Slide automat la fiecare 3 secunde
 
-// Funcția pentru slide-ul următor
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  updateCarousel();
-}
 
-// Funcția pentru slide-ul anterior
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  updateCarousel();
-}
+document.getElementById('teams').addEventListener('change', function () {
+  const selectedTeam = this.value;
+  document.querySelectorAll('.team').forEach(team => team.classList.remove('selected')); // Eliminăm evidențierile anterioare
+  if (selectedTeam !== 'default') {
+    const targetElement = document.getElementById(selectedTeam);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+      targetElement.classList.add('selected'); // Adăugăm clasa pentru evidențiere
+    }
+  }
+});
 
-// Actualizează poziția caruselului
-function updateCarousel() {
-  const offset = -currentIndex * 100; // Calculăm offset-ul în funcție de slide-ul curent
-  slides.style.transform = `translateX(${offset}%)`;
-}
 
-// Pornire automată a caruselului
-setInterval(nextSlide, 3000); // Slide automat la fiecare 3 secunde
+// Referință la buton
+const backToTopButton = document.getElementById('back-to-top');
+
+// Ascultăm evenimentul de scroll
+window.addEventListener('scroll', function () {
+  if (window.scrollY > 300) { // Afișăm butonul dacă utilizatorul derulează mai jos de 300px
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+// Eveniment pentru clic pe buton
+backToTopButton.addEventListener('click', function () {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // Scroll lin până sus
+  });
+});
