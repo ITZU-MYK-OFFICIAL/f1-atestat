@@ -328,6 +328,7 @@ footer {
 .slides img {
   width: 100%;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 /* Butoane pentru navigație */
@@ -395,4 +396,13 @@ button.next:hover {
 
 #back-to-top:hover {
   background-color: #555; /* Schimbare de culoare la hover */
+}
+.start-pag-echipe{
+  background-color: #4ca2ff;
+  margin-top: 7.8dvh;
+}
+.poze-bg{
+  /*background-color: #007bff;*/
+  background-image: url("./poze/Leclerc-Monza-2024-selfie.png");
+  margin-top: 7.8dvh;
 }

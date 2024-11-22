@@ -14,7 +14,7 @@
     <a href="echipe.html">Echipe</a>
     <a href="despre-noi.html">Despre Noi</a>
   </div>
-
+  <div class="start-pag-echipe">
   <div class="main-content">
     <h1>Echipe Formula 1</h1>
 
@@ -27,7 +27,22 @@
       <option value="mclaren">McLaren F1</option>
       <option value="alpine">Alpine F1</option>
       <option value="aston-martin">Aston Martin F1</option>
+      <option value="haas">Haas F1</option>
+      <option value="visacashrb">VisaCashRB F1</option>
+      <option value="williams">Williams Racing F1</option>
+      <option value="kick-sauber">Stake F1 Kick Sauber</option>
     </select>
+
+    <script>
+      const dropdown = document.getElementById('teams');
+    
+      // Parcurgem toate opțiunile (excluzând prima) și adăugăm indexul
+      Array.from(dropdown.options).forEach((option, index) => {
+        if (index > 0) { // Sărim peste prima opțiune ("Alege o echipă")
+          option.text = `${index}. ${option.text}`; // Adăugăm numărul la text
+        }
+      });
+    </script>
   <br></br>
     
    <!--<div id="ferrari" class="team">
@@ -36,7 +51,7 @@
       <p>Ferrari este cea mai veche și una dintre cele mai renumite echipe din Formula 1.</p>
     </div>-->
 
-
+</div>
   <div class="container"><div class="teammm" id="mercedes"></div>
     <section class="content-section">
         <div class="image">
@@ -75,8 +90,8 @@
 
                       Până la Marele Premiu de la Abu Dhabi din 2022, Leclerc a obținut 5 victorii și 18 pole position-uri în cariera sa. El a marcat primul său Grand Slam la Marele Premiu al Australiei din 2022. Leclerc urmează să rămână la Ferrari cel puțin până la sfârșitul sezonului 2026.</p>
                     <br></br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <br></br><br></br>
+                    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    --><br></br><br></br>
   
               <a class="link-btn" href="https://ro.wikipedia.org/wiki/Formula_1" target="_blank">Află mai multe</a><br></br>
               <br></br>
@@ -99,8 +114,8 @@
                     <p>Max Verstappen a debutat la Red Bull Racing în sezonul 2016, după ce a fost promovat de la echipa Toro Rosso (acum VisaCashRB)</p>
                     <p>De când Max Verstappen a venit la Red Bull Racing, echipa a câștigat 3 titluri mondiale la piloți și 2 titluri la constructori (până în 2023). Dominanța sa și performanța echipei au marcat o nouă eră de succes pentru Red Bull în Formula 1.</p>
                     <br></br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <br></br><br></br>
+                    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          --><br></br><br></br>
   
               <a class="link-btn" href="https://ro.wikipedia.org/wiki/Formula_1" target="_blank">Află mai multe</a><br></br>
               <br></br>
@@ -122,8 +137,8 @@
                     <p>Lando Norris și-a făcut debutul în 2019, devenind unul dintre cei mai tineri piloți din istoria sportului. Norris este cunoscut pentru stilul său de pilotaj agresiv, dar calculat, și pentru constanța în obținerea de rezultate bune pe pistă.</p>
                     <p>A reușit să obțină mai multe podiumuri de-a lungul carierei, cel mai notabil moment fiind aproape de a câștiga prima sa cursă în 2021, în Rusia, înainte ca ploaia să îi schimbe soarta. Este considerat unul dintre cei mai promițători piloți ai noii generații și un lider important pentru McLaren, contribuind la revenirea echipei în lupta pentru pozițiile de top.</p>
                     <br></br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <br></br><br></br>
+                    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          --><br></br><br></br>
   
               <a class="link-btn" href="https://ro.wikipedia.org/wiki/Formula_1" target="_blank">Află mai multe</a><br></br>
               <br></br>
@@ -145,8 +160,8 @@
               <p>Denumită anterior Renault F1 Team și deținută de compania de automobile franceză Groupe Renault, precum și de Alianța Renault-Nissan-Mitsubishi , echipa a fost redenumită pentru 2021 pentru a promova marca de mașini sport a Renault, Alpine , și continuă să servească ca echipă de fabrică a Renault. , o poziție pe care echipa o va păstra până când Renault se va retrage din Formula 1 după 2025. Șasiul și partea managerială a echipei are sediul în Enstone , Oxfordshire, Anglia, și partea de motor a echipei Renault cu marca Renault are sediul în Viry-Châtillon , o suburbie a Parisului, Franța. Echipa concurează cu o licență franceză .</p>
                     <p>Pierre Gasly, pilot francez ce concurează pentru echipa Alpine în Formula 1 din sezonul 2023. După un parcurs solid la AlphaTauri, unde a obținut prima sa victorie în 2020 la Monza, Gasly s-a alăturat Alpine pentru a forma un duo francez alături de Esteban Ocon.</p>
                     <br></br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <br></br><br></br>
+                    ,<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          --><br></br><br></br>
   
               <a class="link-btn" href="https://ro.wikipedia.org/wiki/Formula_1" target="_blank">Află mai multe</a><br></br>
               <br></br>
@@ -158,16 +173,112 @@
       <div class="container"><div class="teammm" id="aston-martin"></div>
       <section class="content-section">
           <div class="image">
-              <img src="./poze/alpine-f1-car.png" alt="Aston Martin F1"><br></br>
-              <img src="./poze/gasly.png" alt="Fernando Alonso">
+              <img src="./poze/aston-martin-car.png" alt="Aston Martin F1"><br></br>
+              <img src="./poze/alonso.png" alt="Fernando Alonso">
           </div>
           <div class="text">
             <h2 class="h2-title">Aston Martin F1</h2>
-              <p>Alpine F1 Team , care concurează în prezent ca BWT Alpine F1 Team din motive de sponsorizare, este numele sub care echipa de Formula 1 din Enstone concurează de la începutul Campionatului Mondial de Formula 1 din 2021</p>
-              <p>Denumită anterior Renault F1 Team și deținută de compania de automobile franceză Groupe Renault, precum și de Alianța Renault-Nissan-Mitsubishi , echipa a fost redenumită pentru 2021 pentru a promova marca de mașini sport a Renault, Alpine , și continuă să servească ca echipă de fabrică a Renault. , o poziție pe care echipa o va păstra până când Renault se va retrage din Formula 1 după 2025. Șasiul și partea managerială a echipei are sediul în Enstone , Oxfordshire, Anglia, și partea de motor a echipei Renault cu marca Renault are sediul în Viry-Châtillon , o suburbie a Parisului, Franța. Echipa concurează cu o licență franceză .</p>
-                    <p>Pierre Gasly, pilot francez ce concurează pentru echipa Alpine în Formula 1 din sezonul 2023. După un parcurs solid la AlphaTauri, unde a obținut prima sa victorie în 2020 la Monza, Gasly s-a alăturat Alpine pentru a forma un duo francez alături de Esteban Ocon.</p>
+              <p>Aston Martin este un producător de mașini britanic care a participat la Formula 1 sub diferite forme și este reprezentat în prezent de o echipă numită Aston Martin Aramco F1 Team. O rebranding comercială a echipei Racing Point F1 a dus la revenirea echipei ca Aston Martin în 2021 , utilizând unități de putere Mercedes ale clienților. În 2026, echipa va începe să folosească unități de putere Honda ca parte a unui parteneriat de lucru cu producătorul japonez.</p>
+              <p>Echipa, deținută de Lawrence Stroll , îi are pe Fernando Alonso și Lance Stroll ca piloți de curse începând cu sezonul 2023 . Echipa are sediul în Silverstone și a mai concurat sub diferite nume, începând cu Jordan Grand Prix în 1991.</p>
+                    <p>Fernando Alonso este unul dintre cei mai experimentați și talentați piloți din istoria Formula 1. A debutat în 2001 și a câștigat două titluri mondiale consecutive cu Renault în 2005 și 2006, devenind cel mai tânăr campion mondial la acea vreme. A concurat pentru echipe de top precum Ferrari, McLaren și Alpine, demonstrând abilități excepționale de pilotaj și adaptabilitate.</p>
+                    <p>Începând cu 2023, Alonso a semnat cu Aston Martin, unde a avut un impact imediat. Într-o mașină competitivă, a obținut podiumuri impresionante și a revitalizat echipa, consolidându-și reputația ca unul dintre cei mai consistenți piloți din F1.</p>
                     <br></br>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          --><br></br><br></br>
+  
+              <a class="link-btn" href="https://ro.wikipedia.org/wiki/Formula_1" target="_blank">Află mai multe</a><br></br>
+              <br></br>
+              
+          </div>
+      </section>
+      </div>
+
+
+      <div class="container"><div class="teammm" id="haas"></div>
+      <section class="content-section">
+          <div class="image">
+              <img src="./poze/haas-car.png" alt="HAAS F1"><br></br>
+              <img src="./poze/magnussenXGrosjean].png" alt="Kevin Magnussen">
+          </div>
+          <div class="text">
+            <h2 class="h2-title">Haas F1</h2>
+              <p>Haas Formula LLC, care concurează ca MoneyGram Haas F1 Team, este o echipă de curse de Formula 1 cu licență americană stabilită de coproprietarul echipei NASCAR Cup Series, Gene Haas, în aprilie 2014. Echipa inițial intenționează să își facă debutul la începutul sezonului 2015, dar ulterior a ales să amâne intrare până în sezonul 2016. Directorul echipei este Ayao Komatsu , care l-a înlocuit pe Guenther Steiner , care a servit în acest rol de la înființarea echipei până în ianuarie 2024.</p>
+              <p>Kevin Magnussen, pilot danez, s-a alăturat echipei Haas în Formula 1 în 2017, contribuind la creșterea unei echipe noi și ambițioase în sport. În primul său sezon, a demonstrat consistență și determinare, devenind un pilon central al echipei. Magnussen a obținut rezultate solide pentru Haas, inclusiv mai multe clasări în puncte, cea mai bună performanță fiind un loc 5 în 2018, sezonul de vârf al echipei.</p>
+                    <p>După o pauză în 2021, s-a întors la Haas în 2022, surprinzând cu primul său pole position din carieră, obținut la Marele Premiu din Brazilia. Este apreciat pentru agresivitatea pe pistă și pentru dedicația sa față de echipă, fiind un lider important în cadrul Haas.</p>
+                    <br></br>
+                    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          --><br></br><br></br>
+  
+              <a class="link-btn" href="https://ro.wikipedia.org/wiki/Formula_1" target="_blank">Află mai multe</a><br></br>
+              <br></br>
+              
+          </div>
+      </section>
+      </div>
+
+
+      <div class="container"><div class="teammm" id="visacashrb"></div>
+      <section class="content-section">
+          <div class="image">
+              <img src="./poze/vcarb-car.png" alt="VisaCashRB F1"><br></br>
+              <img src="./poze/yuki.png" alt="Yuki Tsunoda">
+          </div>
+          <div class="text">
+            <h2 class="h2-title">VisaCashRB F1</h2>
+              <p>Racing Bulls SpA, care concurează ca <strong><i><u>Visa Cash App RB Formula One Team</u></i></strong> (prescurtat la <strong><i>RB</i></strong> sau <strong><i>VCARB</i></strong> ), este o echipă și constructor italian de curse de Formula 1 care concurează în sezonul 2024. Este unul dintre cei doi constructori de Formula 1 detinuti de conglomeratul austriac Red Bull GmbH, celalalt fiind Red Bull Racing.</p>
+              <p>Cunoscută sub numele de Scuderia Toro Rosso din 2006 până în 2019 și Scuderia AlphaTauri din 2020 până în 2023, echipa a fost redenumită denumirea actuală pentru sezonul 2024. Actualul CEO este Peter Bayer. Piloții actuali sunt Liam Lawson și Yuki Tsunoda, iar directorul echipei este Laurent Mekies.</p>
+                    <p>Yuki Tsunoda și-a început cariera în Formula 1 în 2021 alături de echipa Scuderia AlphaTauri (actualul VCARB). Susținut de Honda și Red Bull, Tsunoda a arătat viteză și potențial, combinând agresivitatea cu un stil de pilotaj spectaculos.</p>
+                    <br></br>
+                    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          --><br></br><br></br>
+  
+              <a class="link-btn" href="https://ro.wikipedia.org/wiki/Formula_1" target="_blank">Află mai multe</a><br></br>
+              <br></br>
+              
+          </div>
+      </section>
+      </div>
+
+
+      <div class="container"><div class="teammm" id="williams"></div>
+      <section class="content-section">
+          <div class="image">
+              <img src="./poze/williams-car.png" alt="Williams F1"><br></br>
+              <img src="./poze/alex-albon.png" alt="Alexander Albon">
+          </div>
+          <div class="text">
+            <h2 class="h2-title">Williams F1</h2>
+              <p>Williams Racing este o echipă britanică de curse auto ce participă în Campionatul Mondial de Formula 1. A fost fondată de fostul proprietar al echipei, Frank Williams, și de inginerul auto Patrick Head. Echipa a fost formată în 1977 după operațiunea anterioară nereușită a lui Frank Williams din F1: Frank Williams Racing Cars (care mai târziu a devenit Wolf-Williams Racing în 1976). Toate șasiurile Williams F1 se numesc „FW”, urmate de un număr, FW fiind inițialele cofondatorului echipei și proprietarului original, Frank Williams.</p>
+              <p>Alexander Albon Ansusinha este un pilot de curse thailandez ce concurează în Formula 1 pentru echipa Williams. El și-a făcut debutul la Marele Premiu al Australiei din 2019, după ce a fost adus în echipa Scuderia Toro Rosso.</p>
+                    <p>După ce și-a făcut debutul în Formula 1 din 2019 cu Scuderia Toro Rosso, la 12 august 2019, Red Bull Racing a anunțat că Albon îl va înlocui pe Pierre Gasly în echipa seniorului Red Bull, cu schimbul având loc la Marele Premiu al Belgiei din 2019.</p>
+                    <p>A rămas la Red Bull până la sfârșitul sezonului 2020, obținând primul său podium la Marele Premiu al Toscanei din 2020, și încă unul la Marele Premiu al Bahrainului din 2020. În 2021, Albon a rămas fără echipă după ce s-a despărțit de Red Bull, însă a revenit în Formula 1 în 2022, conducând de această dată pentru Williams.</p>
+                    <br></br>
+                    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          --><br></br><br></br>
+  
+              <a class="link-btn" href="https://ro.wikipedia.org/wiki/Formula_1" target="_blank">Află mai multe</a><br></br>
+              <br></br>
+              
+          </div>
+      </section>
+      </div>
+
+
+      <div class="container"><div class="teammm" id="kick-sauber"></div>
+      <section class="content-section">
+          <div class="image">
+              <img src="./poze/stake-sauber.png" alt="Stake F1"><br></br>
+              <img src="./poze/bottas.png" alt="Valtteri Bottas">
+          </div>
+          <div class="text">
+            <h2 class="h2-title">Stake F1 Team Kick Sauber</h2>
+              <p>Sauber Motorsport AG care concurează în prezent în Formula 1 sub numele de Stake F1 Team Kick Sauber și, de asemenea, cunoscut sub numele de Kick Sauber sau Sauber, este o companie elvețiană de inginerie de sport cu motor. A fost fondată în 1970 (sub numele de PP Sauber AG) de Peter Sauber , care a progresat prin alpinism și Campionatul Mondial de mașini sport pentru a ajunge la Formula 1 în 1993. Sauber a operat sub nume propriu din 1993 până în 2005 și din 2011 până în 2018.</p>
+              <p>Au fost cunoscuți sub numele de BMW Sauber din 2006 până în 2010 și ca Alfa Romeo din 2019 până în 2023 în contracte de parteneriat cu BMW și, respectiv, Alfa Romeo. Sauber s-a întors în 2024 ca Stake F1 Team Kick Sauber și urmează să fie echipa de lucru Audi din 2026 înainte, echipa germană plănuind să achiziționeze echipa elvețiană.</p>
+                    <p>Valtteri Viktor Bottas este un pilot de curse finlandez, care concurează în prezent în Formula 1 pentru Sauber. Bottas a terminat de două ori pe locul secund la Campionatul Mondial al Piloților de Formula 1 în 2019 și 2020 cu Mercedes și a câștigat 10 Mari Premii în 12 sezoane.</p>
+                    <p>El a luat prima pole position în Bahrain și prima sa victorie în Rusia, terminând pe locul al treilea în campionat după alte victorii în Austria și Abu Dhabi. După o campanie din 2018 fără victorii, Bottas a terminat pe locul secund cu Hamilton, atât în sezonul 2019, cât și în 2020. El a câștigat finala pentru Mercedes la Marele Premiu al Turciei din 2021, plecând la sfârșitul sezonului 2021, după ce a contribuit la cinci Campionate Mondiale de Constructori consecutive. S-a alăturat Alfa Romeo în 2022, care și-a redenumit Sauber în 2024.</p>
+                    <br></br>
+                   <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=HrO6ha9OJFOZNKUV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br></br><br></br>-->
                     <br></br><br></br>
   
               <a class="link-btn" href="https://ro.wikipedia.org/wiki/Formula_1" target="_blank">Află mai multe</a><br></br>
