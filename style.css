@@ -380,16 +380,16 @@ button.next:hover {
 #back-to-top {
   display: none; /* Ascuns inițial */
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 9dvh; /* 20px */
+  right: 6dvh; /* 20px 70px */
   z-index: 1000;
   background-color: #333; /* Fundal întunecat */
   color: white;
   border: none;
   border-radius: 50%;
-  padding: 10px 15px;
+  padding: 20px 25px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: opacity 0.3s;
 }
@@ -398,11 +398,39 @@ button.next:hover {
   background-color: #555; /* Schimbare de culoare la hover */
 }
 .start-pag-echipe{
-  background-color: #4ca2ff;
+  /*background-color: #4ca2ff;*/
+  /*background-color: #4a5cff;*/
+  background-image: url("./poze/rb-car1.png");
   margin-top: 7.8dvh;
+}
+.team-title-h1{
+  color: white;
+}
+.start-pag-echipe h1, .team-opt{
+  text-align: center;
+  font-size: 5dvh;
+  padding-left: 20dvh;
 }
 .poze-bg{
   /*background-color: #007bff;*/
   background-image: url("./poze/Leclerc-Monza-2024-selfie.png");
   margin-top: 7.8dvh;
+}
+.h1-foto{
+  text-align: center;
+  font-size: 5dvh;
+}
+.about-us{
+  background-image: url("./poze/ver-brazil2024.png");
+  background-position: center;
+  margin-top: 7.8dvh;
+}
+.about-us-text{
+  text-align: center;
+  font-size: 3dvh;
+  padding-top: 10dvh;
+  color: white;
+  /*border: 10dvh;
+  border-radius: 50%;
+  background-color: #4ca2ff;*/
 }
