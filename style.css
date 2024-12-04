@@ -421,7 +421,9 @@ button.next:hover {
   font-size: 5dvh;
 }
 .about-us{
-  background-image: url("./poze/ver-brazil2024.png");
+  /*background-image: url("./poze/ver-brazil2024.png");*/
+  background-image: url("./poze/ver-p1.png");
+  background-size: cover;
   background-position: center;
   margin-top: 7.8dvh;
 }
@@ -433,4 +435,68 @@ button.next:hover {
   /*border: 10dvh;
   border-radius: 50%;
   background-color: #4ca2ff;*/
+  
+}
+@keyframes borderAnimation {
+  0% {
+    border-color: rgb(255, 0, 0);
+  }
+  20% {
+    border-color: rgb(0, 0, 255);
+  }
+  40% {
+    border-color: rgb(0, 255, 0);
+  }
+  60% {
+    border-color: rgb(255, 14, 195);
+  }
+  80% {
+    border-color: rgb(251, 255, 17);
+  }
+  90% {
+    border-color: rgb(98, 0, 255);
+  }
+  100% {
+    border-color: rgb(255, 0, 119);
+  }
+}
+
+.about-atestat > p{
+  padding-left: 10dvh;
+ /* margin-right: 40dvh;*/
+  margin-top: 5dvh;
+  border: 10px solid;
+  /*border-color: rgb(0, 17, 255);*/
+  border-radius: 80px;
+  padding-top: 5dvh;
+  padding-bottom: 5dvh;
+  text-align: center;
+  animation: borderAnimation 4s infinite linear;
+  color: white;
+}
+.text-despre{
+  background-color: rgba(39, 39, 39, 0.7);
+  border: 1dvh solid;
+  border-radius: 25%;
+  padding-top: 15dvh;
+  padding-bottom: 15dvh;
+  margin-left: 50dvh;
+  margin-right: 50dvh;
+  animation: borderAnimation 4s infinite linear;
+}
+/*
+.h1-despre{
+  background-color: rgba(39, 39, 39, 0.7);
+  border: 2dvh;
+  border-radius: 10%;
+  margin-left: 70dvh;
+  margin-right: 70dvh;
+}*/
+.srs{
+  color: white;
+  margin-left: 5dvh;
+  font-size: 30px;
+}
+.srs-a{
+  color:#ffdb12
 }
